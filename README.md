@@ -90,12 +90,11 @@ $${\operatorname {Cov} (X,Y)=\operatorname {E} \left[XY\right]-\operatorname {E}
 $$ρ_{xy} = {\frac{\operatorname{cov}_{xy}}{\sigma_x\sigma_y}} = {\frac{\operatorname{cov}_{xy}}{\operatorname{SD}(x)\operatorname{SD}(y)}}$$
 ## Distribuciones
 
+$$\operatorname{F}_{X}(x) = \mathrm {Prob} (X\leq x)$$
 
-$$\operatorname{F}_{X}(x)= \mathrm {Prob} (X\leq x)$$
+$$\operatorname{P}(X \leq b)=\operatorname{P}(X\leq a)+\operatorname{P}(a < X \leq b)$$
 
-$$\operatorname{P}(X\leq b)=\operatorname{P}(X\leq a)+\operatorname{P}(a<X\leq b)$$
-
-$${\operatorname{P}(a<X\leq b)=\operatorname{P}(X\leq b)-\operatorname{P}(X\leq a)}$$
+$${\operatorname{P}(a < X \leq b)=\operatorname{P}(X\leq b)-\operatorname{P}(X\leq a)}$$
 
 $${\operatorname{F}(x)=\operatorname{P}(X\leq x)=\sum _{k=-\infty }^{x}f(k)}$$
 
@@ -124,7 +123,7 @@ $${\operatorname {E} [X]=np} \ , \ \ {\operatorname {Var} [X]=np(1-p)}$$
 
 ### Distribución de Bernoulli
 
-Si $X$ es una variable aleatoria discreta que mide el "número de éxitos" y se realiza un único experimento con dos posibles resultados denominados éxito y fracaso, se dice que la variable aleatoria ${X\,}$ se distribuye como una Bernoulli de parámetro ${p\,}$ con ${0<p<1} $ y escribimos ${X\sim \operatorname {Bernoulli} (p)}$
+Si ${X}$ es una variable aleatoria discreta que mide el "número de éxitos" y se realiza un único experimento con dos posibles resultados denominados éxito y fracaso, se dice que la variable aleatoria ${X}$ se distribuye como una Bernoulli de parámetro ${p}$ con ${0<p<1} $ y escribimos ${X\sim \operatorname {Bernoulli} (p)}$
 
 $${\operatorname {P} [X=x]=p^{x}(1-p)^{1-x}\qquad x=0,1}$$
 
