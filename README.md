@@ -71,7 +71,7 @@ $$\operatorname{Var}[Y|X=x]=\operatorname{E}[Y^2|X=x]−{\operatorname{E}[Y|X=x]
 
 ### Desvio Estandard
 
-$${\operatorname{SD}(X) =  \sigma ={\sqrt {{\text{Var}}(X)}}\} \implies{\sigma ^{2}={\text{Var}}(X)\}$$
+$${\operatorname{SD}(X) =  \sigma ={\sqrt {{\text{Var}}(X)}}} \implies{\sigma ^{2}={\text{Var}}(X)}$$
 
 ### Ley de Esperanza Total
 
@@ -116,7 +116,7 @@ La **distribución binomial**, describe el número de aciertos en una serie de n
 
 $${\operatorname {P} [X=x]={n \choose x}p^{x}(1-p)^{n-x}}$$
 
-$${\!{n \choose x}={\frac {n!}{x!(n-x)!}}\}$$
+$${\!{n \choose x}={\frac {n!}{x!(n-x)!}}}$$
 
 $${F_{X}(x)=\operatorname {P} [X\leq x]=\sum _{k=0}^{x}{n \choose k}p^{k}(1-p)^{n-k}}$$
 
@@ -158,7 +158,7 @@ La **distribución uniforme discreta**, recoge un conjunto finito de valores que
 
 $${\operatorname {P} [X=x]={\frac {1}{n}}}$$
 
-$${\operatorname {E} [X]={\frac {1}{n}}\sum _{i=1}^{n}x_{i}\}$$
+$${\operatorname {E} [X]={\frac {1}{n}}\sum _{i=1}^{n}x_{i}}$$
 
 
 $${\operatorname {Var} (X)={\frac {1}{n}}\sum _{i=1}^{n}(x_{i}-\operatorname {E} [X])^{2}}$$
