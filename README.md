@@ -10,6 +10,10 @@
     - [Esperanza](#esperanza)
     - [Varianza](#varianza)
     - [Esperanza y Varianza Condicional](#esperanza-y-varianza-condicional)
+    - [Desvio Estandard](#desvio-estandard)
+    - [Ley de Esperanza Total](#ley-de-esperanza-total)
+    - [Covarianza](#covarianza)
+    - [Correlación](#correlación)
   - [Distribuciones](#distribuciones)
     - [Distribución normal](#distribución-normal)
     - [Distribución binomial](#distribución-binomial)
@@ -21,6 +25,7 @@
     - [Distribución hipergéometrica](#distribución-hipergéometrica)
     - [Distribuciones de variable continua](#distribuciones-de-variable-continua)
   - [El Teorema del Límite Central](#el-teorema-del-límite-central)
+- [Comandos R](#comandos-r)
 
 <!-- /code_chunk_output -->
 
@@ -38,7 +43,7 @@ Si $X$ y $Y$ son variables aleatorias con esperanza finita y ${\displaystyle a,b
 - Si $X$ está delimitada por dos números reales, $a$ y $b$, esto es ${\displaystyle a<X<b}$ entonces también lo está su media, es decir, ${\displaystyle a<\operatorname {E} [X]<b}$
 - Si ${\displaystyle Y=a+bX}$, entonces ${\displaystyle \operatorname {E} [Y]=\operatorname {E} [a+bX]=a+b\operatorname {E} [X]}$
 
-$${\displaystyle {\begin{aligned}\operatorname {E} [X+Y]&=\operatorname {E} [X]+\operatorname {E} [Y]\\\operatorname {E} [cX]&=c\operatorname {E} [X]\end{aligned}}}$$
+$${\displaystyle {\begin{aligned}\operatorname {E} [X+Y]&=\operatorname {E} [X]+\operatorname {E} [Y] \\ \operatorname {E} [cX]&=c\operatorname {E} [X]\end{aligned}}}$$
 
 - Si $X$ y $Y$ son variables aleatorias independientes entonces
 
