@@ -15,14 +15,14 @@
     - [Covarianza](#covarianza)
     - [Correlación](#correlación)
   - [Distribuciones](#distribuciones)
-    - [Distribución normal](#distribución-normal)
-    - [Distribución binomial](#distribución-binomial)
+    - [Distribución Normal](#distribución-normal)
+    - [Distribución Binomial](#distribución-binomial)
     - [Distribución de Bernoulli](#distribución-de-bernoulli)
     - [Distribución Uniforme continua](#distribución-uniforme-continua)
     - [Distribución Uniforme Discreta](#distribución-uniforme-discreta)
     - [Distribución de Poisson](#distribución-de-poisson)
-    - [Distribución geométrica](#distribución-geométrica)
-    - [Distribución hipergéometrica](#distribución-hipergéometrica)
+    - [Distribución Geométrica](#distribución-geométrica)
+    - [Distribución Hipergéometrica](#distribución-hipergéometrica)
     - [Distribuciones de variable continua](#distribuciones-de-variable-continua)
   - [El Teorema del Límite Central](#el-teorema-del-límite-central)
 - [Comandos R](#comandos-r)
@@ -100,13 +100,13 @@ $${\operatorname{F}(x)=\operatorname{P}(X\leq x)=\sum _{k=-\infty }^{x}f(k)}$$
 
 $${\operatorname{P}(a < X \leq b)=\operatorname{F}(b)-\operatorname{F}(a)}$$
 
-### Distribución normal
+### Distribución Normal
 Si ${X\sim N(\mu ,\sigma ^{2})}$ y ${a,b\in \mathbb {R} }$, entonces ${aX+b\sim N(a\mu +b,a^{2}\sigma ^{2})}$
 
 Si ${X\,\sim N(\mu ,\sigma ^{2})\,}$, entonces ${Z={\frac {X-\mu }{\sigma }}\!}$ es una variable aleatoria normal estándar: $Z$ ~ $N(0,1)$.
 
 
-### Distribución binomial
+### Distribución Binomial
 
 Si una variable aleatoria discreta $X$ tiene una distribución binomial con parámetros $n\in\mathbb{N}$ y $p$ con ${0<p<1}$ entonces escribiremos ${X\sim \operatorname {Bin} (n,p)}$
 
@@ -174,7 +174,7 @@ Como consecuencia del teorema central del límite, para valores grandes de $\lam
 $${Y={\frac {X-\lambda }{\sqrt {\lambda }}}}$$ converge a una distribución normal de media 0 y varianza 1.
 
 
-### Distribución geométrica
+### Distribución Geométrica
 
 Si una variable aleatoria discreta {X}X sigue una distribución geométrica con parámetro ${0<p<1}$  entonces escribiremos ${X\sim \operatorname {Geometrica} (p)}$ o simplemente ${X\sim \operatorname {Geo} (p)}$
 
@@ -188,7 +188,7 @@ $${\operatorname {E} [X]={\frac {1}{p}}}$$
 
 $${\operatorname {Var} (X)={\frac {1-p}{p^{2}}}}$$
 
-### Distribución hipergéometrica
+### Distribución Hipergéometrica
 
 Una variable aleatoria discreta $X$ tiene una distribución hipergeométrica con parámetros ${N=0,1,\dots }$, ${K=0,1,\dots ,N}$ y ${n=0,1,\dots ,N}$ y escribimos ${X\sim \operatorname {HG} (N,K,n)}$
 
@@ -212,14 +212,21 @@ $$F(x)=P(X\leq x)=\int _{-\infty }^{x}f(t)\,dt$$
 
 ## El Teorema del Límite Central
 
-Una **distribución binomial** de parámetros $n$ y $p$ es aproximadamente normal para grandes valores de $n$, y $p$ no demasiado cercano a 0 o a 1.
-La normal aproximada tiene parámetros $μ = np$, $σ2 = np(1 − p)$.
+Si ${X1, \dots,X_n}$ son i.i.d. y ${s2 = \operatorname{Var}(Xi) < \infty}$ entonces para cualquier ${z}$, donde ${Z\sim\operatorname{N}(0, 1)}$
 
-Una **distribución de** Poisson con parámetro $λ$ es aproximadamente normal para grandes valores de $λ$.
+$${\operatorname{P} ({\frac{\overline{X}-\mu}{\sqrt{{\sigma^2}_x}}} < z) \to_{n\to\infty}} \operatorname{P}(Z<z) ⟹ {\frac{\overline{X}-\mu}{\sqrt{{\sigma^2}_x}}} ≈ \operatorname{N}(0, 1)$$
+
+Una **distribución binomial** de parámetros $n$ y $p$ es aproximadamente normal para grandes valores de $n$, y $p$ no demasiado cercano a 0 o a 1
+La normal aproximada tiene parámetros $μ = np$, $σ2 = np(1 − p)$
+
+Una **distribución de** Poisson con parámetro $λ$ es aproximadamente normal para grandes valores de $λ$
 
 La **distribución normal** aproximada tiene parámetros $μ = σ2 = λ$.
 
-$X_1+X_2+\dots+X_n \sim N(\mu, \sigma^2)\,$
+$X_1+X_2+\dots+X_n \sim N(\mu, \sigma^2)$
+
+Sea ${X1}$, ${X2}$, $\dots$ una secuencia de v.a. independientes e igualmente distribuidas tales que ${µ = \operatorname{E} (X_i)}$ existe. Sea
+$$\overline{X}_n = \frac{(X_1+X_2+\dots+X_n)}{n}$$
 
 # Comandos R
 
