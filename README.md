@@ -91,15 +91,15 @@ $$ρ_{xy} = {\frac{\operatorname{cov}_{xy}}{\sigma_x\sigma_y}} = {\frac{\operato
 ## Distribuciones
 
 
-$$F_{X}(x)= \mathrm {Prob} (X\leq x)$$
+$$\operatorname{F}_{X}(x)= \mathrm {Prob} (X\leq x)$$
 
-$$P(X\leq b)=P(X\leq a)+P(a<X\leq b)$$
+$$\operatorname{P}(X\leq b)=\operatorname{P}(X\leq a)+\operatorname{P}(a<X\leq b)$$
 
-$$P(a<X\leq b)=P(X\leq b)-P(X\leq a)$$
+$${\operatorname{P}(a<X\leq b)=\operatorname{P}(X\leq b)-\operatorname{P}(X\leq a)}$$
 
-$${F(x)=P(X\leq x)=\sum _{k=-\infty }^{x}f(k)}$$
+$${\operatorname{F}(x)=\operatorname{P}(X\leq x)=\sum _{k=-\infty }^{x}f(k)}$$
 
-$$P(a<X\leq b)=F(b)-F(a)$$
+$${\operatorname{P}(a < X \leq b)=\operatorname{F}(b)-\operatorname{F}(a)}$$
 
 ### Distribución normal
 Si ${X\sim N(\mu ,\sigma ^{2})}$ y ${a,b\in \mathbb {R} }$, entonces ${aX+b\sim N(a\mu +b,a^{2}\sigma ^{2})}$
