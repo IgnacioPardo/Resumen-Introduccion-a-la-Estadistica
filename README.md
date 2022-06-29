@@ -67,7 +67,7 @@ Sean $X$ y $Y$ dos variables aleatorias con varianza finita y ${a\in \mathbb {R}
 
 $${\operatorname {E} (X|Y=y)=\sum _{x\in {\mathcal {X}}}x\ \operatorname {P} (X=x|Y=y)=\sum _{x\in {\mathcal {X}}}x{\frac {\operatorname {P} (X=x,Y=y)}{\operatorname {P} (Y=y)}}}$$
 
-$$\operatorname{Var}[Y|X=x]=\operatorname{E}[Y^2|X=x]−{\operatorname{E}[Y|X=x]}2=\sum _{y}y^2 \operatorname{p}(y|x)−\{\operatorname{E}[Y|X=x]\}^2$$
+$$\operatorname{Var}[Y|X=x]=\operatorname{E}[Y^2|X=x]−{\operatorname{E}[Y|X=x]}^2=\sum _{y}y^2 \operatorname{p}(y|x)−\{\operatorname{E}[Y|X=x]\}^2$$
 
 ### Desvio Estandard
 
