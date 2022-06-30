@@ -12,6 +12,7 @@
     - [Esperanza y Varianza Condicional](#esperanza-y-varianza-condicional)
     - [Desvio Estandard](#desvio-estandard)
     - [Ley de Esperanza Total](#ley-de-esperanza-total)
+      - [Ejemplo](#ejemplo)
     - [Covarianza](#covarianza)
     - [Correlación](#correlación)
   - [Distribuciones](#distribuciones)
@@ -97,6 +98,7 @@ $${\operatorname {Cov} (X,Y)=\operatorname {E} \left[XY\right]-\operatorname {E}
 $$ρ_{xy} = {\frac{\operatorname{cov}_{xy}}{\sigma_x\sigma_y}} = {\frac{\operatorname{cov}_{xy}}{\operatorname{SD}(x)\operatorname{SD}(y)}}$$
 ## Distribuciones
 
+### Formulas Discretas
 $$\operatorname{F}_{X}(x) = \mathrm {Prob} (X\leq x)$$
 
 $$\operatorname{P}(X \leq b)=\operatorname{P}(X\leq a)+\operatorname{P}(a < X \leq b)$$
@@ -106,6 +108,14 @@ $${\operatorname{P}(a < X \leq b)=\operatorname{P}(X\leq b)-\operatorname{P}(X\l
 $${\operatorname{F}(x)=\operatorname{P}(X\leq x)=\sum _{k=-\infty }^{x}f(k)}$$
 
 $${\operatorname{P}(a < X \leq b)=\operatorname{F}(b)-\operatorname{F}(a)}$$
+
+### Formulas Continuas
+
+$${\operatorname{F_x}(x) = \int_{-\infty}^{x}{f_x(u)du}}$$
+
+$${\operatorname{P}(a < X < b) = \int_a^b{f(x)dx} = \operatorname{F_x}(b) -\operatorname{F_x}(a)} $$
+
+$${\operatorname{P}(a < X < b) = \operatorname{P}(a < X \leq b) = \operatorname{P}(a \leq X < b)= \operatorname{P}(a \leq X \leq b)}$$
 
 ### Distribución Normal
 Si ${X\sim N(\mu ,\sigma ^{2})}$ y ${a,b\in \mathbb {R} }$, entonces ${aX+b\sim N(a\mu +b,a^{2}\sigma ^{2})}$
@@ -235,7 +245,7 @@ $$X_1+X_2+\dots+X_n \sim N(\mu, \sigma^2)$$
 $$X_1+X_2+\dots+X_n \sim N(n ⋅ \operatorname{E}(X), n ⋅ \operatorname{Var}(X))$$
 
 Sea ${X1}$, ${X2}$, $\dots$ una secuencia de v.a. independientes e igualmente distribuidas tales que ${µ = \operatorname{E} (X_i)}$ existe. Sea
-$$\overline{X}_n = \frac{(X_1+X_2+\dots+X_n)}{n} \sim N(\operatorname{E}(X), \frac{n}{ \operatorname{Var}(X)}) $$
+$$\overline{X}_n = \frac{(X_1+X_2+\dots+X_n)}{n} \sim N(\operatorname{E}(X), \frac{\operatorname{Var}(X)}{n}) $$
 
 # Comandos R
 
