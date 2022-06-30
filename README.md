@@ -52,7 +52,7 @@ $${\operatorname {E} [cX]=c\operatorname {E} [X]}$$
 $${\operatorname {E} [XY]=\operatorname {E} [X]\operatorname {E} [Y]}$$
 
 ### Varianza
-$$\operatorname {Var}[X]=\operatorname {E} [X^{2}]-\operatorname {E} [X]^{2}$$
+$$\operatorname {Var}[X]=\operatorname {E} [X^{2}]-\operatorname {E} [X]^{2} ⟹ \operatorname {E} [X^{2}] = \operatorname {Var}[X] + \operatorname {E} [X]^{2}$$
 
 Sean $X$ y $Y$ dos variables aleatorias con varianza finita y ${a\in \mathbb {R} }$
 
@@ -75,11 +75,18 @@ $${\operatorname{SD}(X) =  \sigma ={\sqrt {{\text{Var}}(X)}}} \implies{\sigma ^{
 
 ### Ley de Esperanza Total
 
-$$\operatorname {E}(C) = \operatorname {E}(\operatorname {E}(C ∣ N))$$
+$$\operatorname {E}(C) = \operatorname {E}(\operatorname {E}(C ∣ N)) = \operatorname{E} (\operatorname{E}(C) ⋅ N)$$
 
 $$\operatorname {E}(N ⋅ Y ) = \operatorname {E}(\operatorname {E}(N ⋅ Y ∣ N)) = \operatorname {E}(g(N))$$
 
 $$\operatorname {g}(n) = \operatorname {E}(N ⋅ Y ∣ N = n)$$
+
+
+#### Ejemplo
+
+Si ${N}$ es una v.a. de ${μ_{n}}$ y ${\sigma^2_{n}}$, ${X_i}$ es una v.a. de ${μ_{x_i}}$ y ${\sigma^2_{x_i}}$, ${N}$ y ${X_i}$ son iid., y ${K} = {\sum _{i=0}^N {X_i}}$
+
+$${\begin{aligned}\operatorname{E}(K) & = \operatorname{E}({\sum _{i=0}^N {X_i}}) \\ & = \operatorname{E}(\operatorname{E}(K|N)) \\& = \operatorname{E}(\operatorname{g}(N))\\& = {\operatorname{E}(N ⋅ \operatorname{E}(X_i))} \\ &= {\operatorname{E}(N ⋅ \mu_{x_i})} \\ &= {\mu_{x_i} ⋅ \operatorname{E}(N)} \\ &= {\mu_{x_i} ⋅ \mu_N}\end{aligned}\begin{aligned}\operatorname{g}(n) &= \operatorname{E}(K|N=n) \\& = \operatorname{E}({\sum _{i=0}^n {X_i}}|N=n) \\& = \sum _{i=0}^n{\operatorname{E}(X_i|N=n)} \\& = \sum _{i=0}^n{\operatorname{E}(X_i)} \\& = n ⋅ {\operatorname{E}(X_i)}\end{aligned}}$$
 
 ### Covarianza
 
@@ -176,7 +183,7 @@ $${Y={\frac {X-\lambda }{\sqrt {\lambda }}}}$$ converge a una distribución norm
 
 ### Distribución Geométrica
 
-Si una variable aleatoria discreta {X}X sigue una distribución geométrica con parámetro ${0<p<1}$  entonces escribiremos ${X\sim \operatorname {Geometrica} (p)}$ o simplemente ${X\sim \operatorname {Geo} (p)}$
+Si una variable aleatoria discreta ${X}$ sigue una distribución geométrica con parámetro ${0<p<1}$  entonces escribiremos ${X\sim \operatorname {Geometrica} (p)}$ o simplemente ${X\sim \operatorname {Geo} (p)}$
 
 La **distribución geométrica**, describe el número de intentos necesarios hasta conseguir el primer acierto.
 
@@ -223,10 +230,12 @@ Una **distribución de** Poisson con parámetro $λ$ es aproximadamente normal p
 
 La **distribución normal** aproximada tiene parámetros $μ = σ2 = λ$.
 
-$X_1+X_2+\dots+X_n \sim N(\mu, \sigma^2)$
+$$X_1+X_2+\dots+X_n \sim N(\mu, \sigma^2)$$
+
+$$X_1+X_2+\dots+X_n \sim N(n ⋅ \operatorname{E}(X), n ⋅ \operatorname{Var}(X))$$
 
 Sea ${X1}$, ${X2}$, $\dots$ una secuencia de v.a. independientes e igualmente distribuidas tales que ${µ = \operatorname{E} (X_i)}$ existe. Sea
-$$\overline{X}_n = \frac{(X_1+X_2+\dots+X_n)}{n}$$
+$$\overline{X}_n = \frac{(X_1+X_2+\dots+X_n)}{n} \sim N(\operatorname{E}(X), \frac{n}{ \operatorname{Var}(X)}) $$
 
 # Comandos R
 
