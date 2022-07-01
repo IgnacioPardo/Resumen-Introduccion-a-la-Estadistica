@@ -28,6 +28,10 @@
     - [Distribución Hipergéometrica](#distribución-hipergéometrica)
     - [Distribuciones de variable continua](#distribuciones-de-variable-continua)
   - [El Teorema del Límite Central](#el-teorema-del-límite-central)
+- [Vectores Aleatorios](#vectores-aleatorios)
+    - [Probabilidad Conjunta](#probabilidad-conjunta)
+    - [Probabilidad Marginal](#probabilidad-marginal)
+    - [Bayes](#bayes)
 - [Comandos R](#comandos-r)
 
 <!-- /code_chunk_output -->
@@ -266,6 +270,9 @@ $${\operatorname{P}_{Y}(y) = \sum_{x ∈ R_X}\operatorname{P}_{XY}(X=x, \ \  Y=y
 
 $${\operatorname{P}(Y|X=x) = \frac{\operatorname{P}_{XY}(x, y)}{\operatorname{P}_{X}(x)}}$$
 
+### Bayes
+
+$${\operatorname{P}_{Y|X=x}(y) = \frac{\operatorname{P}_{X|Y=y}(x) \operatorname{P}_{Y}(y)}{\operatorname{P}_{X}(x)}}$$
 
 # Comandos R
 
