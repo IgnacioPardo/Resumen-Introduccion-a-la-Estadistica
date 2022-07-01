@@ -16,6 +16,8 @@
     - [Covarianza](#covarianza)
     - [Correlación](#correlación)
   - [Distribuciones](#distribuciones)
+    - [Formulas Discretas](#formulas-discretas)
+    - [Formulas Continuas](#formulas-continuas)
     - [Distribución Normal](#distribución-normal)
     - [Distribución Binomial](#distribución-binomial)
     - [Distribución de Bernoulli](#distribución-de-bernoulli)
@@ -122,6 +124,9 @@ Si ${X\sim N(\mu ,\sigma ^{2})}$ y ${a,b\in \mathbb {R} }$, entonces ${aX+b\sim 
 
 Si ${X\,\sim N(\mu ,\sigma ^{2})\,}$, entonces ${Z={\frac {X-\mu }{\sigma }}\!}$ es una variable aleatoria normal estándar: $Z$ ~ $N(0,1)$.
 
+$${X\,\sim N(\mu, \sigma ^{2}) ⟹ Z={\frac {X-\mu }{\sigma }} \sim N(0,1)}$$
+
+$${Z\sim N(0,1) ⟹ X = \sigma Z + μ ∼ N(\mu, \sigma ^{2})}$$
 
 ### Distribución Binomial
 
@@ -234,11 +239,11 @@ Si ${X1, \dots,X_n}$ son i.i.d. y ${s2 = \operatorname{Var}(Xi) < \infty}$ enton
 $${\operatorname{P} ({\frac{\overline{X}-\mu}{\sqrt{{\sigma^2}_x}}} < z) \to_{n\to\infty}} \operatorname{P}(Z<z) ⟹ {\frac{\overline{X}-\mu}{\sqrt{{\sigma^2}_x}}} ≈ \operatorname{N}(0, 1)$$
 
 Una **distribución binomial** de parámetros $n$ y $p$ es aproximadamente normal para grandes valores de $n$, y $p$ no demasiado cercano a 0 o a 1
-La normal aproximada tiene parámetros $μ = np$, $σ2 = np(1 − p)$
+La normal aproximada tiene parámetros $μ = np$, $σ^2 = np(1 − p)$
 
 Una **distribución de** Poisson con parámetro $λ$ es aproximadamente normal para grandes valores de $λ$
 
-La **distribución normal** aproximada tiene parámetros $μ = σ2 = λ$.
+La **distribución normal** aproximada tiene parámetros $μ = σ^2 = λ$.
 
 $$X_1+X_2+\dots+X_n \sim N(\mu, \sigma^2)$$
 
@@ -246,6 +251,21 @@ $$X_1+X_2+\dots+X_n \sim N(n ⋅ \operatorname{E}(X), n ⋅ \operatorname{Var}(X
 
 Sea ${X1}$, ${X2}$, $\dots$ una secuencia de v.a. independientes e igualmente distribuidas tales que ${µ = \operatorname{E} (X_i)}$ existe. Sea
 $$\overline{X}_n = \frac{(X_1+X_2+\dots+X_n)}{n} \sim N(\operatorname{E}(X), \frac{\operatorname{Var}(X)}{n}) $$
+
+# Vectores Aleatorios
+
+### Probabilidad Conjunta
+
+$${\operatorname{P}_{XY}}(x, y) = \operatorname{P}(X=x \cap Y=y)$$
+
+### Probabilidad Marginal
+
+$${\operatorname{P}_{X}(x) = \sum_{y ∈ R_Y}\operatorname{P}_{XY}(X=x, \ \  Y=y)}$$
+
+$${\operatorname{P}_{Y}(y) = \sum_{x ∈ R_X}\operatorname{P}_{XY}(X=x, \ \  Y=y)}$$
+
+$${\operatorname{P}(Y|X=x) = \frac{\operatorname{P}_{XY}(x, y)}{\operatorname{P}_{X}(x)}}$$
+
 
 # Comandos R
 
