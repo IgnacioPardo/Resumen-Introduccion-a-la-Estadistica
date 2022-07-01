@@ -274,6 +274,8 @@ $${\operatorname{P}(Y|X=x) = \frac{\operatorname{P}_{XY}(x, y)}{\operatorname{P}
 
 $${\operatorname{P}_{Y|X=x}(y) = \frac{\operatorname{P}_{X|Y=y}(x) \operatorname{P}_{Y}(y)}{\operatorname{P}_{X}(x)}}$$
 
+<!-- pagebreak -->
+
 # Comandos R
 
 ```r
